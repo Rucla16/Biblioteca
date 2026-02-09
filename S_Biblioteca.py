@@ -51,7 +51,7 @@ class Biblioteca(self):
         if soci_actual.prestar_llibre(llibre_a_prestar) = limit:
             print("Has arribat al límit de llibres que pots agafar!")
         else:
-            return prestar_llibre(self)
+            return Biblioteca.prestar_llibre(self)
     
     def penalitzacio_retard(self, retard):
         retard = dies_a_prestar + 1
